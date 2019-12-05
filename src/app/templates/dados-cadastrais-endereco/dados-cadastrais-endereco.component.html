@@ -1,0 +1,121 @@
+<div class="clr-row">
+    <ul class="clr-timeline clr-timeline-horizontal">
+        <li class="clr-timeline-step">
+            <clr-icon
+                shape="dot-circle"
+                aria-current="true"
+                aria-label="Current"
+            ></clr-icon>
+            <div class="clr-timeline-step-body"></div>
+        </li>
+        <li class="clr-timeline-step">
+            <clr-icon shape="circle" aria-label="Not started"></clr-icon>
+            <div class="clr-timeline-step-body"></div>
+        </li>
+        <li class="clr-timeline-step">
+            <clr-icon shape="circle" aria-label="Not started"></clr-icon>
+            <div class="clr-timeline-step-body"></div>
+        </li>
+        <li class="clr-timeline-step">
+            <clr-icon shape="circle" aria-label="Not started"></clr-icon>
+            <div class="clr-timeline-step-body"></div>
+        </li>
+    </ul>
+</div>
+
+<div>
+    <p></p>
+</div>
+
+<form clrForm>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            style="margin-top: 10px;"
+            placeholder="13200-000"
+            clrInput
+            name="cep"
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            style="margin-top: 10px;"
+            placeholder="RUA RANGEL PESTANA"
+            clrInput
+            name="logradouro"
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            style="margin-top: 10px;"
+            placeholder="100"
+            clrInput
+            name="numero"
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            style="margin-top: 10px;"
+            placeholder="COMPLEMENTO"
+            clrInput
+            name="complemento"
+            formControlName="photoTitle"
+            disabled
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            placeholder="CENTRO"
+            style="margin-top: 10px;"
+            clrInput
+            name="bairro"
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            style="margin-top: 10px;"
+            placeholder="JUNDIAÍ"
+            clrInput
+            name="cidade"
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            style="margin-top: 10px;"
+            placeholder="SÃO PAULO"
+            clrInput
+            name="estado"
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+
+    <div class="clr-row">
+            <button class="btn btn-avancar" (click)="onClick()">
+                AVANÇAR
+            </button>
+        </div>
+</form>

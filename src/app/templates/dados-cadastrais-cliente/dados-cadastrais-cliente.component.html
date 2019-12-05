@@ -1,0 +1,88 @@
+<div>
+    <h4>
+        Olá, para uma oferta personalizada, precisamos saber um pouco sobre
+        você.
+    </h4>
+</div>
+
+<form clrForm>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            placeholder="NOME COMPLETO"
+            clrInput
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            placeholder="CPF"
+            clrInput
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            placeholder="DATA DE NASCIMENTO"
+            clrInput
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            placeholder="E-MAIL"
+            clrInput
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            placeholder="CELULAR"
+            clrInput
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+</form>
+
+<div class="clr-row">
+    <p style="text-align: center; font-size: 10px;">
+        A FINAMAX IRÁ CONSULTAR SEU HISTORICO JUNTO AOS BUREAUS DE CRÉDITO. PARA
+        LHE PROPORCIONAR A MELHOR TAXA DE JUROS DE ACORDO COM SEU PERFIL
+        <B>LEIA OS TERMOS DE USO ABAIXO PARA ENTENDER MELHOR</B>
+    </p>
+</div>
+
+<div class="clr-row" style="margin-top: 20px;">
+    <clr-checkbox-wrapper>
+        <input
+            class="clr-checkbox-size"
+            type="checkbox"
+            clrCheckbox
+            value="option1"
+            name="options"
+        />
+        <label
+            >Li e concordo com os
+            <span style="color: #2699FB;">termos de uso</span> e
+            <span style="color: #2699FB;">política de privacidade</span></label
+        >
+    </clr-checkbox-wrapper>
+</div>
+
+<div class="clr-row">
+    <button class="btn btn-outline btn-avancar" (click)="onClick()">AVANÇAR</button>
+</div>

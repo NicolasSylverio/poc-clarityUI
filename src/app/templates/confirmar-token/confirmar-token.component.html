@@ -1,0 +1,44 @@
+<div>
+    <h4>
+        Para garantir sua segurança, digite o código que acabamos de enviar via
+        SMS.
+    </h4>
+</div>
+
+<form clrForm>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            placeholder="Copie ou digite o código recebido e cole aqui"
+            clrInput
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+    <p style="text-align: center; font-size: 12px;">
+        Tempo para expirar o código 00:28
+    </p>
+
+    <h4 style="text-align: center; margin-top: 30px;">
+        Estamos criando uma conta para você.
+    </h4>
+
+    <clr-input-container>
+        <input
+            type="password"
+            class="clr-input-container"
+            placeholder="DIGITE UMA SENHA"
+            clrInput
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+
+    <div class="clr-row">
+        <button class="btn btn-outline btn-avancar" (click)="onClick()">
+            AVANÇAR
+        </button>
+    </div>
+</form>

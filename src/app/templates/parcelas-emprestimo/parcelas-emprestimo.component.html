@@ -1,0 +1,32 @@
+<div class="clr-row" style="margin-top: 16px;">
+    <div class="clr-col-2 clr-align-self-center">
+        <button type="button" class="btn btn-icon" style="border: none; " aria-label="home">
+            <clr-icon shape="undo" style="color: #2699FB; height: 24px; width: 24px;" (click)="goBack()"></clr-icon>
+        </button>
+    </div>
+
+    <div class="clr-col-10 clr-align-self-center clr-align-items-center">
+        <h4 style="margin: 0px;" class="clr-justify-content-center">
+            VOCÊ SELECIONOU <span style="color: #2699FB">R$ {{ valor }},00</span>
+        </h4>
+    </div>
+</div>
+
+<div class="clr-row clr-justify-content-center">
+        <h4>EM QUANTAS PARCELAS?</h4>
+    </div>
+
+<div class="clr-row clr-justify-content-center">
+    <button class="btn btn-oferta" (click)="goDefinicaoOferta(3)">3 MESES</button>
+    <button class="btn btn-oferta" (click)="goDefinicaoOferta(6)">6 MESES</button>
+</div>
+
+<div class="clr-row clr-justify-content-center">
+    <button class="btn btn-oferta" (click)="goDefinicaoOferta(9)">9 MESES</button>
+    <button class="btn btn-oferta" (click)="goDefinicaoOferta(12)">12 MESES</button>
+</div>
+
+<div class="clr-row clr-justify-content-center">
+    <button class="btn btn-oferta" (click)="goDefinicaoOferta(18)">18 MESES</button>
+    <button class="btn btn-oferta" (click)="goDefinicaoOferta(24)">24 MESES</button>
+</div>

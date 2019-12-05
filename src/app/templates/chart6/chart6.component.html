@@ -1,0 +1,46 @@
+<div style="margin: 30px 0 20px 0; justify-content: center;">
+    <h3>Pie Chart</h3>
+</div>
+
+<div>
+    <div>
+        <div class="chart">
+            <canvas
+                baseChart
+                [data]="pieChartData"
+                [labels]="pieChartLabels"
+                [chartType]="pieChartType"
+                [options]="pieChartOptions"
+                [plugins]="pieChartPlugins"
+                [colors]="pieChartColors"
+                [legend]="pieChartLegend"
+            >
+            </canvas>
+        </div>
+    </div>
+</div>
+<div>
+    <button
+        class="btn btn-primary"
+        color="primary"
+        (click)="pieChartLegend = !pieChartLegend"
+    >
+        Toggle Legend
+    </button>
+    <button class="btn btn-primary" color="primary" (click)="changeLabels()">
+        Change Labels
+    </button>
+    <button class="btn btn-primary" color="primary" (click)="addSlice()">
+        Add Slice
+    </button>
+    <button class="btn btn-primary" color="primary" (click)="removeSlice()">
+        Remove Slice
+    </button>
+    <button
+        class="btn btn-primary"
+        color="primary"
+        (click)="changeLegendPosition()"
+    >
+        Change Legend Position
+    </button>
+</div>

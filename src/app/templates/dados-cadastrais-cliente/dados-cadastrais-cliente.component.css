@@ -1,0 +1,21 @@
+.clr-timeline-step {
+    min-width: 4rem;
+    margin-top: 20px;
+}
+
+.clr-input-container {
+    width: 100%;
+    color: #2699fb;
+    border-bottom-color: #2699fb;
+    background-color: white;
+    border: 1px solid #2699fb;
+    padding: 20px;
+}
+
+.btn-avancar {
+    margin: 16px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #2699fb;
+    color: #2699fb;
+}

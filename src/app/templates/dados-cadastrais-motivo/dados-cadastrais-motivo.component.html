@@ -1,0 +1,101 @@
+<div class="clr-row">
+    <ul class="clr-timeline clr-timeline-horizontal">
+        <li class="clr-timeline-step">
+            <clr-icon
+                shape="success-standard"
+                aria-label="Completed"
+            ></clr-icon>
+            <div class="clr-timeline-step-body"></div>
+        </li>
+        <li class="clr-timeline-step">
+            <clr-icon
+                shape="dot-circle"
+                aria-current="true"
+                aria-label="Current"
+            ></clr-icon>
+            <div class="clr-timeline-step-body"></div>
+        </li>
+        <li class="clr-timeline-step">
+            <clr-icon shape="circle" aria-label="Not started"></clr-icon>
+            <div class="clr-timeline-step-body"></div>
+        </li>
+        <li class="clr-timeline-step">
+            <clr-icon shape="circle" aria-label="Not started"></clr-icon>
+            <div class="clr-timeline-step-body"></div>
+        </li>
+    </ul>
+</div>
+
+<form clrForm>
+    <div class="clr-row">
+        <p style="margin-left: 8px;">
+            Conte-nos sobre o seu trabalho e motivo do empréstimo.
+        </p>
+    </div>
+
+    <div class="clr-row">
+        <clr-select-container>
+            <select
+                clrSelect
+                name="options"
+                placeholder=""
+                required
+                class="clr-select-container"
+            >
+                <option value="one">EMPREGADO PRIVADO / CLT</option>
+            </select>
+        </clr-select-container>
+    </div>
+
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            style="margin-top: 0;"
+            placeholder="EMPRESA"
+            clrInput
+            name="empresa"
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            placeholder="CARGO"
+            clrInput
+            name="cargo"
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            placeholder="RENDA MENSAL"
+            clrInput
+            name="renda mensal"
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+    <clr-input-container>
+        <input
+            class="clr-input-container"
+            placeholder="JUNDIAÍ"
+            clrInput
+            name="cidade"
+            required
+            formControlName="photoTitle"
+        />
+        <clr-control-error>This field is required!</clr-control-error>
+    </clr-input-container>
+
+    <div class="clr-row">
+        <button class="btn btn-avancar" (click)="onClick()">
+            AVANÇAR
+        </button>
+    </div>
+</form>

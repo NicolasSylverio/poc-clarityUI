@@ -1,0 +1,21 @@
+.fixed-action-btn {
+    height: 64px;
+    width: 64px;
+    bottom: 16px;
+    right: 16px;
+    position: fixed;
+    background-color: #2699fb;
+    border: none;
+    border-radius: 50%;
+}
+
+.fixed-action-btn:hover {
+    background-color: white;
+    border: 2px solid #2699fb;
+    color: #2699fb;
+}
+
+.chat-icon {
+    height: 32px;
+    width: 32px;
+}
