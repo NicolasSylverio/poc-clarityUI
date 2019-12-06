@@ -21,6 +21,7 @@ import { DadosCadastraisClienteComponent } from './templates/dados-cadastrais-cl
 import { ConfirmarTokenComponent } from './templates/confirmar-token/confirmar-token.component';
 import { DadosCadastraisMotivoComponent } from './templates/dados-cadastrais-motivo/dados-cadastrais-motivo.component';
 import { HomeComponent } from './templates/home/home.component';
+import { GeolocationComponent } from './templates/geolocation/geolocation.component';
 
 const appRoutings: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -54,6 +55,8 @@ const appRoutings: Routes = [
     { path: 'camera', component: CameraComponent },
 
     { path: 'log', component: LogDetailsComponent },
+
+    { path: 'geolocation', component: GeolocationComponent },
 
     { path: '**', component: PageNotFoundComponent }
 ];

@@ -7,13 +7,9 @@ import { Router } from '@angular/router';
     styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+    constructor(private router: Router) {}
 
-    constructor(
-        private router: Router
-    ) { }
-
-    ngOnInit() {
-    }
+    ngOnInit() {}
 
     private onClickCharts() {
         this.router.navigate([`chart`]);
@@ -29,5 +25,9 @@ export class HomeComponent implements OnInit {
 
     private onClickLog() {
         this.router.navigate([`log`]);
+    }
+
+    public onClickGeolocation() {
+        this.router.navigate([`geolocation`]);
     }
 }

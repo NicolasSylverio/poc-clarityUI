@@ -1,0 +1,20 @@
+<div class="container">
+    <div style="text-align:center">
+        <h1>Geolocation</h1>
+    </div>
+
+    <div>
+        <div class="text-white" *ngIf="currentLatitude && currentLongitude; else no_content">
+            <p>Latitude: {{ currentLatitude }}</p>
+            <p>Longitude: {{ currentLongitude }}</p>
+        </div>
+
+        <ng-template #no_content>
+            <p>Location information is unavailable</p>
+        </ng-template>
+
+        <div class="text-white" *ngIf="region">
+            <p>Localização: {{ region?.city }} - {{ region?.state_code }} </p>
+        </div>
+    </div>
+</div>

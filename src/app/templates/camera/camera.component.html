@@ -1,1 +1,40 @@
-<p>camera works!</p>
+<div class="app">
+    <webcam
+      [width]="380"
+      [height]="380"
+      [imageQuality]="1.0"
+
+      [trigger]="triggerObservable"
+
+      (cameraSwitched)="cameraWasSwitched($event)"
+      (imageCapture)="handleImage($event)"
+      (imageClick)="handleImageClick()"
+      (initError)="handleInitError($event)"
+    ></webcam>
+
+    <div>
+      <button class="btn btn-oferta" (click)="capture()">Capture Photo</button>
+    </div>
+
+    <p><strong>Device Id</strong>: {{ deviceId }}</p>
+
+    <ul>
+        <li >
+
+        </li>
+    </ul>
+
+    <div class="clr-row">
+        <div class="clr-col-lg-6 clr-col-12" *ngFor="let capture of captures">
+            <a class="card clickable">
+                <div class="card-img">
+                    <img [src]="capture.imageAsDataUrl" height="200" />
+                </div>
+                <div class="card-block">
+                    <p class="card-text">Captured photo</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>

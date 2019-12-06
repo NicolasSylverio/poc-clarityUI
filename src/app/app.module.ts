@@ -1,12 +1,15 @@
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ClarityModule } from '@clr/angular';
+import { ChartsModule } from 'ng2-charts';
+import { WebcamModule } from 'ngx-webcam';
 import { AppComponent } from './app.component';
 import { AppRouting } from './app.routing';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BrowserModule } from '@angular/platform-browser';
-import { ChartsModule } from 'ng2-charts';
-import { ClarityModule } from '@clr/angular';
-import { NgModule } from '@angular/core';
-
+import { OpencagedataService } from './services/opencagedata.service';
 import { CameraComponent } from './templates/camera/camera.component';
+import { ChartMenuComponent } from './templates/chart-menu/chart-menu.component';
 import { Chart1Component } from './templates/chart1/chart1.component';
 import { Chart2Component } from './templates/chart2/chart2.component';
 import { Chart3Component } from './templates/chart3/chart3.component';
@@ -15,7 +18,6 @@ import { Chart5Component } from './templates/chart5/chart5.component';
 import { Chart6Component } from './templates/chart6/chart6.component';
 import { Chart7Component } from './templates/chart7/chart7.component';
 import { Chart8Component } from './templates/chart8/chart8.component';
-import { ChartMenuComponent } from './templates/chart-menu/chart-menu.component';
 import { ConfirmarTokenComponent } from './templates/confirmar-token/confirmar-token.component';
 import { DadosCadastraisClienteComponent } from './templates/dados-cadastrais-cliente/dados-cadastrais-cliente.component';
 import { DadosCadastraisEnderecoComponent } from './templates/dados-cadastrais-endereco/dados-cadastrais-endereco.component';
@@ -23,6 +25,7 @@ import { DadosCadastraisMotivoComponent } from './templates/dados-cadastrais-mot
 import { DefinicaoCardComponent } from './templates/definicao-card/definicao-card.component';
 import { DefinicaoOfertaComponent } from './templates/definicao-oferta/definicao-oferta.component';
 import { FaleConoscoComponent } from './templates/fale-conosco/fale-conosco.component';
+import { GeolocationComponent } from './templates/geolocation/geolocation.component';
 import { HeaderComponent } from './templates/header/header.component';
 import { HomeComponent } from './templates/home/home.component';
 import { LogDetailsComponent } from './templates/log-details/log-details.component';
@@ -55,16 +58,20 @@ import { ParcelasEmprestimoComponent } from './templates/parcelas-emprestimo/par
         PageNotFoundComponent,
         ParcelasEmprestimoComponent,
         CameraComponent,
-        LogDetailsComponent
+        LogDetailsComponent,
+        GeolocationComponent
     ],
     imports: [
         AppRouting,
         BrowserAnimationsModule,
         BrowserModule,
         ChartsModule,
-        ClarityModule
+        ClarityModule,
+        HttpClientModule,
+        HttpClientJsonpModule,
+        WebcamModule
     ],
-    providers: [],
+    providers: [OpencagedataService],
     bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
